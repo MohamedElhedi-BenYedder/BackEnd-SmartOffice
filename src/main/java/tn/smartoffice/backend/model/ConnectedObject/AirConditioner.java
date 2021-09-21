@@ -1,11 +1,20 @@
 package tn.smartoffice.backend.model.ConnectedObject;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.TypeAlias;
+import org.springframework.data.mongodb.core.mapping.Document;
 import tn.smartoffice.backend.model.SubSite.SubSite;
-@Data
-public class AirConditioner extends ConnectedObject{
 
+
+@Document(collection = "ConnectedObject")
+@TypeAlias("AirConditioner")
+public class AirConditioner extends ConnectedObject{
+    @Setter
+    @Getter
     private boolean on ;
+    @Setter
+    @Getter
     private int conditioningLevel;
     public AirConditioner()
     {

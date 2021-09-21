@@ -1,13 +1,16 @@
 package tn.smartoffice.backend.model.ConnectedObject;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.springframework.data.annotation.TypeAlias;
+import org.springframework.data.mongodb.core.mapping.Document;
 import tn.smartoffice.backend.model.SubSite.SubSite;
 
-@Data
-public class Window extends ConnectedObject{
 
+@Document(collection = "ConnectedObject")
+@TypeAlias("Window")
+public class Window extends ConnectedObject{
+    @Setter
+    @Getter
     private boolean opened ;
     public Window()
     {

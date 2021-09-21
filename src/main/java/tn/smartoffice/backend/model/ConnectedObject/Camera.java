@@ -1,11 +1,13 @@
 package tn.smartoffice.backend.model.ConnectedObject;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.TypeAlias;
+import org.springframework.data.mongodb.core.mapping.Document;
 import tn.smartoffice.backend.model.SubSite.SubSite;
 
 
+@Document(collection = "ConnectedObject")
+@TypeAlias("Camera")
 public class Camera  extends ConnectedObject{
     public Camera()
     {

@@ -14,11 +14,7 @@ public class BasicAuth extends LogIn{
     @Getter
     @Setter
     private String hashedPassword;
-    @Override
-    public String newToken() {
-        return null;
-    }
-    private String Hash(String password)
+    public static String Hash(String password)
     {
         String originalString = password + salt;
         String sha256hex = DigestUtils.sha256Hex(originalString);
@@ -32,6 +28,7 @@ public class BasicAuth extends LogIn{
     {
         email = Email;
         hashedPassword = Hash(Password);
+        super.currentToken = newToken();
     }
     public boolean updatePassword (String newPassword)
     {

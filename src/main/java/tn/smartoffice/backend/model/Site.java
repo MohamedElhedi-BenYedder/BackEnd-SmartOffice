@@ -17,10 +17,10 @@ import java.util.List;
 @TypeAlias("Site")
 public class Site {
     @Id
-    int siteId ;
-    String address ;
-    int PostalCode ;
+    int siteId;
+    String address;
+    int PostalCode;
     String description;
-    List<Employee> listOfEmployee ;
+    List<Employee> listOfEmployee;
 
 }

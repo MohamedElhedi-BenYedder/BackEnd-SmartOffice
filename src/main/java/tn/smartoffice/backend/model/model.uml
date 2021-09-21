@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="39.5" y="-35.5">com</node>
+    <node x="4846.0" y="-35.5">netscape</node>
+    <node x="4672.0" y="-35.5">reactor</node>
+    <node x="4402.0" y="-35.5">toolbarButtonGraphics</node>
+    <node x="4242.5" y="-35.5">sun</node>
+    <node x="4041.0" y="-35.5">win32-x86</node>
+    <node x="3802.5" y="-35.5">groovyjarjarasm</node>
+    <node x="3641.5" y="-35.5">java</node>
+    <node x="3478.0" y="-35.5">javax</node>
+    <node x="3236.0" y="-35.5">groovyjarjarpicocli</node>
+    <node x="3084.0" y="-35.5">net</node>
+    <node x="2911.0" y="-35.5">images</node>
+    <node x="2737.5" y="-35.5">static</node>
+    <node x="2582.5" y="-35.5">org</node>
+    <node x="2426.5" y="-35.5">ch</node>
+    <node x="2222.5" y="-35.5">templates</node>
+    <node x="2050.0" y="-35.5">Class50</node>
+    <node x="1869.0" y="-35.5">lombok</node>
+    <node x="1724.0" y="-35.5">jdk</node>
+    <node x="1522.0" y="-35.5">META-INF</node>
+    <node x="1351.0" y="-35.5">groovy</node>
+    <node x="1207.5" y="-35.5">tn</node>
+    <node x="917.5" y="-35.5">groovyjarjarcommonscli</node>
+    <node x="682.0" y="-35.5">groovyjarjarantlr</node>
+    <node x="432.0" y="-35.5">mockito-extensions</node>
+    <node x="210.0" y="-35.5">win32-x86-64</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Compact" zoom="0.22291457286432162" showDependencies="false" x="2516.5" y="-20.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
