@@ -1,11 +1,10 @@
 package tn.smartoffice.backend.controller.LogIn;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import tn.smartoffice.backend.dto.LogIn.BasicAuthDto;
-import tn.smartoffice.backend.model.ConnectedObject.AirConditioner;
 import tn.smartoffice.backend.model.LogIn.BasicAuth;
-
-import java.util.List;
 
 @RequestMapping("/BasicAuth")
 public interface BasicAuthController {
@@ -18,4 +17,12 @@ public interface BasicAuthController {
     // get
     @GetMapping
     public boolean login(@RequestBody BasicAuthDto basicAuthDto);
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @Data
+    public class BasicAuthDto {
+        private String email;
+        private String password;
+    }
+
 }

@@ -2,7 +2,6 @@ package tn.smartoffice.backend.controller.LogIn;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
-import tn.smartoffice.backend.dto.LogIn.BasicAuthDto;
 import tn.smartoffice.backend.model.LogIn.BasicAuth;
 import tn.smartoffice.backend.service.LogIn.BasicAuthServiceImpl;
 
@@ -13,7 +12,7 @@ public class BasicAuthControllerImpl implements BasicAuthController{
     private BasicAuthServiceImpl basicAuthService;
     @Override
     public BasicAuth create(BasicAuthDto basicAuthDto) {
-        return basicAuthService.create(basicAuthDto);
+        return basicAuthService.create(basicAuthDto.getEmail(), basicAuthDto.getPassword());
     }
 
     @Override
@@ -23,6 +22,8 @@ public class BasicAuthControllerImpl implements BasicAuthController{
 
     @Override
     public boolean login(BasicAuthDto basicAuthDto) {
-        return basicAuthService.login(basicAuthDto);
+        return basicAuthService.login(basicAuthDto.getEmail(), basicAuthDto.getPassword());
     }
+
+
 }

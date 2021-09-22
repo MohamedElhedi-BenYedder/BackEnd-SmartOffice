@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.mongodb.core.mapping.Document;
-import tn.smartoffice.backend.util.files.Photo;
+import tn.smartoffice.backend.model.Media.Photo;
 
 @NoArgsConstructor
 @AllArgsConstructor
